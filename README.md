@@ -8,11 +8,11 @@ values for a beatmap without manually downloading the beatmap.
 Current versions of software used:
 
 ```shell
-[teemu@xps ezpp]$ npm -v
+[user@hostname ezpp]$ npm -v
 6.12.0
-[teemu@xps ezpp]$ yarn -v
+[user@hostname ezpp]$ yarn -v
 1.19.1
-[teemu@xps ezpp]$ node -v
+[user@hostname ezpp]$ node -v
 v12.12.0
 ```
 
@@ -20,7 +20,7 @@ Everything should work with older versions of both Node and NPM.
 
 ## Translating
 
-All translation efforts are warmly welcome! The base English translations can be found [here](https://github.com/oamaok/ezpp/blob/master/translations/en.json). After translating the file you should also add relevant information to [this file](https://github.com/oamaok/ezpp/blob/master/translations/languages.json), where the `code` field should match with the `.json` file you created. If you are unsure on how to edit the files, feel free to [raise an issue](https://github.com/oamaok/ezpp/issues/new) or ask away in the pull request.
+All translation efforts are warmly welcome! The base English translations can be found [here](https://github.com/totallyrobot/ezpp/blob/master/translations/en.json). After translating the file you should also add relevant information to [this file](https://github.com/totallyrobot/ezpp/blob/master/translations/languages.json), where the `code` field should match with the `.json` file you created. If you are unsure on how to edit the files, feel free to [raise an issue](https://github.com/totallyrobot/ezpp/issues/new) or ask away in the pull request.
 
 ## Developing
 
@@ -56,13 +56,6 @@ To build a production version of the package, run `npm run build:firefox`.
 ### Production builds
 
 Run `npm run build:all`. Two files, `ezpp-chrome.zip` and `ezpp-firefox.zip`, are generated.
-
-## Installing
-
-Chrome/Chromium: [Install from Google WebStore](https://chrome.google.com/webstore/detail/ezpp/aimihpobjpagjiakhcpijibnaafdniol)
-
-Firefox: [Install from addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/ezpp/)
-
 ## License
 
-[MIT](https://github.com/oamaok/ezpp/blob/master/LICENSE)
+[MIT](https://github.com/totallyrobot/ezpp/blob/master/LICENSE)
