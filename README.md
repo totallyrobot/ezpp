@@ -9,11 +9,9 @@ Current versions of software used:
 
 ```shell
 [user@hostname ezpp]$ npm -v
-6.12.0
-[user@hostname ezpp]$ yarn -v
-1.19.1
+6.14.6
 [user@hostname ezpp]$ node -v
-v12.12.0
+v10.20.1
 ```
 
 Everything should work with older versions of both Node and NPM.
