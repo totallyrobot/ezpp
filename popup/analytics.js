@@ -21,19 +21,11 @@ chrome.storage.local.get(['analytics'], ({ analytics }) => {
   }
 
   // By default don't inject analytics on Firefox. Disables analytics when developing.
-  const shouldInjectAnalytics = (uninitialized ? !__FIREFOX__ : analytics) && !__DEV__;
+  const shouldInjectAnalytics = false
 
   analyticsToggle.checked = shouldInjectAnalytics;
 
   if (shouldInjectAnalytics) {
-    _gaq.push(['_setAccount', 'UA-77789641-4']);
-    _gaq.push(['_trackPageview']);
-
-    const ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
-    const s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
+    ;
   }
 })

@@ -18,14 +18,6 @@ settingsCloseButton.addEventListener('click', () => {
 });
 
 
-// Initial state of the toggle is set in analytics.js
-analyticsToggle.addEventListener('change', (evt) => {
-  chrome.storage.local.set({
-    analytics: evt.target.checked,
-  });
-});
-
-
 chrome.storage.local.get(['darkmode'], ({ darkmode }) => {
   document.documentElement.classList.toggle('darkmode', !!darkmode);
   darkmodeToggle.checked = darkmode

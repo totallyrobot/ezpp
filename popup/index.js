@@ -94,11 +94,6 @@ function trackError(error) {
     },
   };
 
-  _gaq.push([
-    '_trackEvent',
-    'error',
-    JSON.stringify(report),
-  ]);
 }
 
 function displayError(error) {
@@ -127,7 +122,6 @@ const trackCalculate = (() => {
 
     lastData = Object.assign({}, analyticsData);
 
-    _gaq.push(['_trackEvent', 'calculate', JSON.stringify(analyticsData)]);
   };
 })();
 
@@ -161,7 +155,6 @@ function calculate() {
     };
 
     // Track results
-    trackCalculateDebounced(analyticsData);
 
     difficultyStarsElement.innerText = stars.total.toFixed(2);
 
@@ -311,8 +304,6 @@ const fetchBeatmapBackground = beatmapSetId =>
     cover.onabort = () => resolve();
   });
 
-// Track errors with GA
-window.addEventListener('error', trackError);
 
 if (__FIREFOX__) {
   containerElement.classList.toggle('firefox', true);
